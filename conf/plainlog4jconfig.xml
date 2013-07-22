@@ -38,35 +38,35 @@
 		</filter>
 	</appender>
 
-	<appender name="email" class="em.logging.test.FilteredSMTPAppender">
+	<appender name="email" class="org.emunoz.logging.test.FilteredSMTPAppender">
 		<param name="BufferSize" value="10" />
 		<param name="SMTPHost" value="smtp.gmail.com" />
 		<param name="port" value="587" />
 		<param name="SMTPProtocol" value="smtp" />
-		<param name="SMTPUsername" value="lodpeas@emunoz.org" />
-		<param name="SMTPPassword" value="L0dp3as2" />
+		<param name="SMTPUsername" value="user@gmail.com" />
+		<param name="SMTPPassword" value="pass" />
 		<param name="TLS" value="true" />
 		<param name="TimeFrame" value="10" />
 		<param name="MaxEMails" value="2" />
-		<param name="From" value="lodpeas@emunoz.org" />
-		<param name="To" value="emir.munoz@gmail.com" />
-		<param name="Subject" value="Wikitables" />
+		<param name="From" value="user@gmail.com" />
+		<param name="To" value="otheruser@gmail.com" />
+		<param name="Subject" value="Subject test" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%d{HH:mm:ss,SSS} %-5p [%c{1}] %m%n" />
 		</layout>
 	</appender>
 
-	<appender name="AdministratorEmail" class="em.logging.test.FilteredSMTPAppender">
+	<appender name="AdministratorEmail" class="org.emunoz.logging.test.FilteredSMTPAppender">
 		<param name="BufferSize" value="10" />
 		<param name="SMTPHost" value="smtp.gmail.com" />
-		<param name="SMTPUsername" value="lodpeas@emunoz.org" />
-		<param name="SMTPPassword" value="L0dp3as2" />
+		<param name="SMTPUsername" value="user@gmail.com" />
+		<param name="SMTPPassword" value="pass" />
 		<param name="TLS" value="true" />
 		<param name="TimeFrame" value="10" />
 		<param name="MaxEMails" value="2" />
-		<param name="From" value="lodpeas@emunoz.org" />
-		<param name="To" value="emir.munoz@gmail.com" />
-		<param name="Subject" value="Wikitables" />
+		<param name="From" value="user@gmail.com" />
+		<param name="To" value="otheruser@gmail.com" />
+		<param name="Subject" value="Subject test" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%d{HH:mm:ss,SSS} %-5p [%c{1}] %m%n" />
 		</layout>
